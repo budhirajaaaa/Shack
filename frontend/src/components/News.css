@@ -1,0 +1,25 @@
+.newsComponent{
+    height: 350px;
+    width: 400px;
+    border: 1px solid black;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px   ;
+    
+}
+.newsComponent .imageContainer{
+    height: 150px;
+    width: 100%;
+}
+.newsComponent .imageContainer img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+.news{
+    border: 1px solid gray;
+    padding: 4px;
+}

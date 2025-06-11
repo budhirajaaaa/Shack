@@ -1,0 +1,11 @@
+.homePage{
+    display: flex;
+    padding: 12px 4px;
+    
+  
+}
+.allPost{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

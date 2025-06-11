@@ -1,0 +1,96 @@
+
+.loginPage{
+    height: 100vh;
+    background-image: url('/public/loginShaft.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginContainer{
+    height: 80%;
+    width: 90%;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+   
+
+}
+.socialContainer{
+    flex: 6;
+    border-right: 1px solid #ccc; 
+    padding: 30px;
+    padding-left: 60px;
+    overflow: hidden;
+
+}
+.socialContainer h1{
+    font-family:  "Cormorant Garamond", serif;;
+    margin: 0;
+    font-size: 4em;
+    font-weight: bolder;
+    color: brown;
+}
+.socialContainer h4{
+    margin: 0;
+    font-size: 1.5em;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    color: peru;
+}
+.socialContainer img{
+    height: 350px;
+    width: 380px;
+    overflow: hidden;
+}
+
+.loginSignUpContainer{
+    flex:3;
+    padding:40px;
+    font-family: none;
+    overflow: hidden;
+}
+.loginSignUpContainer h2{
+    font-size: 2em;
+    color: darkred;
+}
+.loginSignUpContainer p{
+    margin: 0;
+    color: grey;
+    
+}
+
+.loginForm{
+    padding-top: 20px;
+}
+.loginForm label{
+    color: darkred;
+}
+.loginForm input{
+    margin: 2px 0 6px 0;
+    border: 1px solid darkgrey;
+    height: 2em;
+    border-radius: 4px;
+    font-family: inherit;
+    width: 60%;
+    padding: 4px;
+    color: grey;
+
+}
+.loginForm input::placeholder {
+    /* text-align:bottom; */
+    transform: translateY(2px);
+  }
+.loginForm button{
+    margin-top: 8px;
+    font-weight: bolder;
+    border: 1px solid brown;
+    color: brown;
+    width: 60%;
+}  
+.loginForm .btn:hover{
+    background-color: darkred ;
+    border-color: brown;
+}

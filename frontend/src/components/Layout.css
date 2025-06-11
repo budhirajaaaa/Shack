@@ -1,0 +1,15 @@
+.fullLayout{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+.mainLayout{
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+.mainContent{
+    flex: 1;
+    overflow-y: scroll;
+}

@@ -1,0 +1,23 @@
+.navBar{
+    background-color:darkred;
+    color: white;
+    padding:12px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.navBar .companyName{
+font-size: 2em;
+font-weight: 600;
+}
+
+.rightNav{
+    align-self: center;
+}
+
+.logo .material-symbols-outlined{
+    font-size: 2.5em;
+    vertical-align: SUB;
+}
