@@ -1,8 +1,9 @@
 import User from "../model/User.js";
 import jwt from "jsonwebtoken";
+const JWT_SECRET = process.env.JWT_SECRET;
 const generateToken = (user) => {
   console.log(user);
-  return jwt.sign({ id: user._id }, "mySuperSecretKey123", {
+  return jwt.sign({ id: user._id }, JWT_SECRET, {
     expiresIn: "1d",
   });
 };

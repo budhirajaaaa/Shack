@@ -6,7 +6,7 @@ import authRouter from "./routes/authRoutes.js";
 import postRouter from "./routes/postRoutes.js";
 import path from "path";
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 dotenv.config();
 app.use(cors());
