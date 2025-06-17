@@ -41,7 +41,7 @@ export default function Home() {
           return <PostCard key={e._id} data={e} setPost={setPost} />;
         })}
       </div>
-      <div>
+      <div className="newsContainer">
         <News data={news} />
       </div>
     </div>

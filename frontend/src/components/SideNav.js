@@ -1,16 +1,19 @@
 import "./SideNav.css";
-
+import {useNavigate} from "react-router-dom"
 export default function SideNav() {
+  const navigate=useNavigate()
   const options = [
-    { name: "Home", icon: "dashboard" },
-    { name: "Profile", icon: "account_circle" },
-    { name: "Settings", icon: "settings" },
+    { name: "Home", icon: "dashboard" ,path:"home"},
+    { name: "Create Post", icon: "account_circle", path:"create" },
   ];
+  const handleClick=(index)=>{
+    navigate(`/${options[index].path}`)
+  }
   return (
     <div className="sideNav">
-      {options.map((e) => {
+      {options.map((e,index) => {
         return (
-          <div className="sideNavEle">
+          <div className="sideNavEle" onClick={()=>handleClick(index)}>
             {e.name}
             <span class="material-icons">{e.icon}</span>
           </div>

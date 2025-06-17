@@ -58,30 +58,37 @@ export default function PostCard({ data, setPost }) {
           onClick={() => handleLike(data._id)}
         >
           {isLiked ? "favorite" : "favorite_border"}
+
         </span>
+          <span className="likesCount">{data.likes.length}</span>
       </div>
       <div className="commentSection">
-        <input
-          type="text"
-          placeholder="Comment..."
-          value={comment}
-          name="comment"
-          onChange={handleCommentInput}
-        />
-        <span class="material-icons" onClick={() => handleComment(data._id)}>
-          send
-        </span>
-        {data.comment.map((e) => {
-          return (
-            <div key={e._id}>
-              <div>
-                <span>{e.user.username}</span>
+        <div className="commentInputWrapper">
+          <input
+            type="text"
+            placeholder="Write a comment..."
+            value={comment}
+            name="comment"
+            onChange={handleCommentInput}
+            className="commentInput"
+          />
+          <span className="material-icons sendIcon" onClick={() => handleComment(data._id)}>
+            send
+          </span>
+        </div>
+
+        <div className="commentsList">
+          {data.comment.map((e) => (
+            <div className="commentCard" key={e._id}>
+              <div className="commentHeader">
+                <strong className="commentUsername">{e.user.username}</strong>
               </div>
-              <div>{e.content}</div>
+              <div className="commentContent">{e.content}</div>
             </div>
-          );
-        })}
+          ))}
+        </div>
       </div>
+
     </div>
   );
 }
