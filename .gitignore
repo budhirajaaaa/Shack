@@ -1,19 +1,32 @@
-# dependencies
+# Node modules (don't track dependencies)
 node_modules/
 frontend/node_modules/
 backend/node_modules/
 
-
-# build files
+# Build output
 dist/
 build/
+frontend/build/
+backend/build/
 
-# environment variables
+# Environment variables (sensitive info)
 .env
+.env.local
+frontend/.env
+frontend/.env.local
+backend/.env
+backend/.env.local
 
-# logs
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# OS files
+# OS/system files
 .DS_Store
 Thumbs.db
+
+# Optional: IDE/editor settings
+.vscode/
+.idea/
