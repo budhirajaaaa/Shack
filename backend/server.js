@@ -5,10 +5,11 @@ import cors from "cors";
 import authRouter from "./routes/authRoutes.js";
 import postRouter from "./routes/postRoutes.js";
 import path from "path";
+
+dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-dotenv.config();
 app.use(cors());
 app.use(express.json());
 mongoConnect();
